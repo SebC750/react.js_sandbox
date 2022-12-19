@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Counter, {List} from './components/counter';
+import Table from './components/table';
 import "bootstrap/dist/css/bootstrap.css";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Counter />
-    <List />
+    <Table />
   </React.StrictMode>
 );
 

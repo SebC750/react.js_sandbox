@@ -1,6 +1,25 @@
 
-.title{
+#title{
+    text-align: center;
     Color: white;
-    background-color: red;
-    
+    background-color: rgb(134, 90, 205);
+    padding:25px;
+}
+#description{
+    text-align: center;
+    Color: white;
+}
+#body_background{
+    background-color: crimson;
+}
+#tableFormat{
+    padding: 60px;
+    background-color: rgb(133, 101, 160);
+
+}
+#headerRow{
+    background-color: rgb(180, 136, 216);
+}
+#background{
+    background-color: black;
 }
