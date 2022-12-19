@@ -4,18 +4,20 @@ import './view.css';
 
 
 class Table extends Component{
-    
+   //Sets up an empty array that will hold the json values, which can then be traversed through and displayed into the table. 
     state = {
         allData: []
     }
-    
+   //Built-in react function that executes code within it. 
    componentDidMount() {
         fetch("https://recommend.gosemantically.com/searchExpert/1")
+        //Grab the api data
         .then((response) => response.json())
+        //Then, add it to the array by updating the state.
         .then((data)=> this.setState({allData: data.message[0]}))
     }
 
-
+    //HTML 
     render(){
         
         return (
@@ -33,7 +35,7 @@ class Table extends Component{
                 <th> Similarity Score </th>
              </tr>
                
-               
+                   
                    {this.state.allData.map((val)=> (
                     
                      <tr key={val.id}>
